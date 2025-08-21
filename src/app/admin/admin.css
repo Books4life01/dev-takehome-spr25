@@ -1,0 +1,11 @@
+.RequestTableContainer{
+    width:75%;
+    margin-left:50px;
+        margin-right:50px;
+
+   box-sizing: border-box;
+}
+h3{
+    padding-left:10px;
+    font-weight: bold;
+}

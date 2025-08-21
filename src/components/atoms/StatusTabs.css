@@ -1,0 +1,27 @@
+.statusTabsContainer,.statusTabsContainer>div{
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    gap:15px;
+    height: 40px;
+    text-align: center;
+    
+}
+.active{
+    background-color:rgb(81, 81, 209) !important;
+    color: white !important;
+}
+.statusTabsContainer>div{
+            background-color: rgb(245, 243, 243);
+            color:rgb(136, 136, 136);
+    border-radius:5px 5px 0px 0px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right:2px;
+
+}
+.statusTabsContainer>div:hover{
+    
+    background-color: rgb(195, 231, 254);
+
+}

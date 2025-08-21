@@ -1,0 +1,64 @@
+
+/* .construction
+{
+    border:2px black solid;
+    width:100%;
+    hieght:20px;
+} */
+
+.tableHeaders{
+    display:flex;
+    justify-content: space-between;
+  
+    align-items: center;
+    
+
+}
+
+.tableHeaders,.Requests{
+     color:gray;
+    border:rgb(191, 189, 189) solid 1px; 
+      margin-left: 5px;
+    margin-right:5px;
+        width:100%;
+
+}
+.tableFooter{
+    padding-left: 5px;
+    display: flex;
+    justify-content: right;
+    border-top-style:none;
+}
+
+.Requests{
+    border-top-style:none;
+    border-bottom-style: none;
+}
+.Requests>div{
+        border:rgb(191, 189, 189) solid 1px; 
+            border-top-style:none;
+    border-left-style:none;
+    border-right-style:none;
+
+
+}
+.tableHeaders>div{
+    padding-left:5px;
+    font-weight: bold;
+}
+
+
+.tableHeaders>div{
+    flex:1;
+}
+.tableHeaders>.itemRequestedHeader{
+    flex:2 ;
+}
+
+.statusTabs{
+     margin-left: 5px;
+    margin-right:5px;
+        width:100%;
+        padding-left: 5px;
+
+}
