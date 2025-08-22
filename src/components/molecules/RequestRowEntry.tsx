@@ -4,9 +4,10 @@ import React from 'react'
 import './RequestRowEntry.css'
 import Dropdown from '../atoms/Dropdown'
 import {useRouter} from 'next/navigation'
+import Checkbox from '@mui/material/Checkbox'
 
 
-const RequestRowEntry = (props:{request:ItemRequest,refetchData:()=>void}) => {
+const RequestRowEntry = (props:{request:ItemRequest,refetchData:()=>void,batchUpdates:boolean,isSelectedUpdate:(s:string,b:boolean)=>void}) => {
     const router = useRouter();
 
       function handleStatusChange(newStatus:string){
@@ -22,8 +23,12 @@ const RequestRowEntry = (props:{request:ItemRequest,refetchData:()=>void}) => {
         })
 
       }
+      const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    props.isSelectedUpdate(props.request.id,event.target.checked);
+  };
   return (
     <div className="requestRowContainer">
+      {props.batchUpdates?(<Checkbox onChange={handleChange}/>):(<></>)}
       <div className="name">{props.request.requestorName}</div>
       <div className="itemRequested">{props.request.itemRequested}</div>
      <div className="createdDate">{new Date(props.request.createdDate).toLocaleDateString()}</div>

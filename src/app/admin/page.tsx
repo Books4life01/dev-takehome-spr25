@@ -15,9 +15,7 @@ export default async function ItemRequestsPage() {
     // <div><Dropdown status={"pending"} setStatus={null}></Dropdown></div>
     <div className="max-w-full mx-auto mt-8 flex flex-col items-center gap-6">
       <div className="RequestTableContainer">
-        <h3>Item Requests</h3>
-        <br></br>
-        <RequestTable /**requests={JSON.parse(JSON.stringify(requests))}**/></RequestTable>
+        <RequestTable batchUpdates={true}/**requests={JSON.parse(JSON.stringify(requests))}**/></RequestTable>
       </div>
     </div>
   );

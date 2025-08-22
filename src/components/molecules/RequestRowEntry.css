@@ -16,3 +16,6 @@
 .requestRowContainer>.itemRequested{
     flex:2 ;
 }
+.requestRowContainer>span:hover>svg{
+    background-color: rgb(214, 234, 240);
+}
